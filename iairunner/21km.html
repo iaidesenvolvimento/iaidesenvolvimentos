@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	<title>Iai runner</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo.css"/>
+	
+</head>
+<body>
+
+<div data-role="page" id="21km" data-theme="c" >
+
+	<div data-role="header" data-theme="b">
+		<h1>Iai Runner <br/>Academia de corrida pessoal</h1>
+        <div data-role="navbar" > 
+            <ul>
+                <li><a href="index.html" rel="external" class=" ui-btn-active ui-state-persist">Home</a></li>
+                <li><a href="treinos">Treinos</a></li>
+                <li><a href="academia">Academia</a></li>
+            </ul>
+
+        </div><!-- /Navbarr -->
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">
+		<h4>21 km - Academia de corrida pessoal</h4>
+        <center>
+        <img src="imagens/corredor.png" alt="corredor" align="middle" width="100px" height="100px">
+        </center>
+
+        <form action="processar-dados.php"method="post">
+        <label for="Tipo:">Tipo</label>
+        <input type="text" name="tipo" placeholder="tipo de atividade" >
+        <label for="treino:">Treino</label>
+        <input type="text" name="treino" placeholder="treino">
+        <label for="Observacoes:">Observacoes</label>
+        <input type="text" name="observacoes"rows="5"placeholder="Digite suas observações">
+        <label for="Concluido:">Concluido</label>
+        <input type="text" name="concluido" placeholder="Sim/Não">
+
+        <button type="submit">Enviar</button>
+        </form> 
+    </div><!-- /content -->
+
+	<div data-role="footer" data-theme="b" data-position="fixed">
+		<small>&#169; 2025 Iai Runner Academia de corrida pessoal</small>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
